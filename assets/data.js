@@ -34,7 +34,7 @@ const PROFILE = {
   // 사이드바 외부 링크 — href를 실제 링크로 바꿔주세요
   links: {
     email: "mailto:dbsgpfl9777@gmail.com",
-    pdf: "assets/resume.pdf",
+    pdf: "assets/윤혜리_이력서.pdf",
   },
 };
 
