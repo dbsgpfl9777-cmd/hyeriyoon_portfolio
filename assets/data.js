@@ -10,7 +10,7 @@ const PROFILE = {
   email: "dbsgpfl9777@gmail.com",
   education: ["한국영상대학교", "음향제작학과"],
   certifications: [
-    { name: "Pro Tools 자격증", year: "2019" },
+    { name: "Pro Tools Specialist Version 12", year: "2019" },
   ],
   career: [
     { name: "Studio VAKA", duration: "2Y 6M" },
@@ -22,11 +22,12 @@ const PROFILE = {
   ],
   // 플레이한 게임 목록 (About 페이지 GAME PLAY 섹션) — 원하는 만큼 추가/삭제 가능
   gamePlay: [
-    { title: "GAME TITLE 01", hours: "32h" },
-    { title: "GAME TITLE 02", hours: "18h" },
-    { title: "GAME TITLE 03", hours: "45h" },
-    { title: "GAME TITLE 04", hours: "27h" },
-    { title: "GAME TITLE 05", hours: "61h" },
+    { title: "Sons Of The Forest 01", hours: "24.9h" },
+    { title: "The Forest", hours: "14.5h" },
+    { title: "Lies of P", hours: "19.2h" },
+    { title: "Escape the Backrooms", hours: "4.3h" },
+    { title: "Little Nightmares ll", hours: "7.4h" },
+    { title: "Cyberpunk", hours: "48.2h" },
   ],
   // 사이드바 외부 링크 — href를 실제 링크로 바꿔주세요
   links: {
