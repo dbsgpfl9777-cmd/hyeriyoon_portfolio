@@ -37,7 +37,7 @@ const PROFILE = {
     youtube: "https://youtube.com/playlist?list=PLVNH_EPvWBYzCgl5NfScfoeKlcnXQEfQl&si=RlGGMiEjheOux5Va",
     pdf: "assets/윤혜리_이력서.pdf",
   },
-  demoReel: "https://youtube.com/playlist?list=PLVNH_EPvWBYzCgl5NfScfoeKlcnXQEfQl&si=OHMglDgg_FRITlzT",
+  demoReel: "https://youtu.be/BjbYsWXG3HQ?si=BPyCRVrevzQkv0rZ",
 };
 
 // ---------------- PORTFOLIO ----------------
