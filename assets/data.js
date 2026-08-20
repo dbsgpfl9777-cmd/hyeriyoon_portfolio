@@ -56,7 +56,7 @@ const PORTFOLIO_PROJECTS = [
     title: "몬스터_P의 거짓",
     thumbnail: "assets/thumbnails/monster.png",
     year: "2026",
-    categories: ["RPG"],
+    categories: ["RPG", "TRAILER"],
     video: "https://youtu.be/BjbYsWXG3HQ?si=XyDJAUPoOv8un6gc",
     design: [
       "타락한 대주교 안드레우스의 등장 컷 신을 바탕으로, 몬스터의 크기와 특성을 표현하고 어두운 분위기를 구성하는 것을 목표로 하였습니다.",
@@ -71,7 +71,7 @@ const PORTFOLIO_PROJECTS = [
     title: "트레일러_프로젝트 일",
     thumbnail: "assets/thumbnails/ILL.jpg",
     year: "2026",
-    categories: ["HORROR"],
+    categories: ["HORROR", "TRAILER"],
     video: "https://youtu.be/AEAkHoSJhTU?si=RrA2vU7s6XQy2Xpd",
     design: [
       "감염된 인간들의 기괴하고 인간적이지 않은 존재감을 사운드로 표현하는 것이 핵심 목표였습니다.",
@@ -101,7 +101,7 @@ const PORTFOLIO_PROJECTS = [
     title: "스킬 사운드 디자인",
     thumbnail: "assets/thumbnails/rpg-skill.png",
     year: "2026",
-    categories: ["RPG"],
+    categories: ["RPG", "IN-GAME"],
     video: "https://youtu.be/yQEcVEVt8ys?si=--Z6I3IjcsAPw3i8",
     design: [
       "RPG 장르의 스킬 VFX 영상의 사운드를 디자인한 영상입니다. 각 속성의 무게와 질감을 표현하는 것에 중점을 두었습니다.",
@@ -117,7 +117,7 @@ const PORTFOLIO_PROJECTS = [
     title: "언리얼 와이즈 연동 사운드 구현",
     thumbnail: "assets/thumbnails/unreal.png",
     year: "2026",
-    categories: ["GAME PROJECT"],
+    categories: ["ENGINE"],
     video: "https://youtu.be/qKzIeKxzFpI?si=IFXV4VnRhg-8KMwj",
     design: [
       "언리얼 엔진과 와이즈 연동을 통해 게임 상황에 반응하는 인터랙티브 사운드 시스템 구현을 목표로 했습니다.",
@@ -133,7 +133,7 @@ const PORTFOLIO_PROJECTS = [
     title: "트레일러_빅 헬멧 히어로즈",
     thumbnail: "assets/thumbnails/bighelmet.jpg",
     year: "2026",
-    categories: ["CASUAL"],
+    categories: ["CASUAL", "TRAILER"],
     video: "https://youtu.be/NKfKiYtHhS4?si=dG_KXz1sB8rk1XUJ",
     design: [
       "미국 카툰같은 유쾌한 분위기를 위하여 과장되고 엉뚱한 사운드를 연출하고자 하였습니다.",
@@ -147,7 +147,7 @@ const PORTFOLIO_PROJECTS = [
     title: "인게임_오리와 도깨비불",
     thumbnail: "assets/thumbnails/ORI.png",
     year: "2026",
-    categories: ["GAME PROJECT"],
+    categories: ["GAME PROJECT", "IN-GAME"],
     video: "https://youtu.be/7Vy5SO_iQVU?si=qzR7UBspeVfnfMQU",
     design: [
       "인게임 영상으로, 메인 캐릭터의 소리를 중심에 두고 각 사운드 요소가 우선순위에 따라 서로를 방해하지 않도록 균형 잡힌 사운드 환경을 구성하는 것을 목표로 했습니다.",
@@ -162,7 +162,7 @@ const PORTFOLIO_PROJECTS = [
     title: "UI_프래그마타",
     thumbnail: "assets/thumbnails/Prag.png",
     year: "2026",
-    categories: ["RPG"],
+    categories: ["RPG", "UI"],
     video: "https://youtu.be/Xy7sCgA5JxA?si=9zfcCG4ugeu91KF",
     design: [
       "SF 장르의 특성에 맞춰, 기계적인 움직임을 표현한 UI를 구현하고자 하였습니다. 각 UI의 인터랙션 상태를 즉각 구분하는 사운드를 설계하는 것을 목표로 하였습니다.",
@@ -178,7 +178,7 @@ const PORTFOLIO_PROJECTS = [
     title: "UI_스타레일",
     thumbnail: "assets/thumbnails/Starrail.png",
     year: "2026",
-    categories: ["SUBCULTURE"],
+    categories: ["SUBCULTURE", "UI"],
     video: "https://youtu.be/iRWShLw6OS4?si=R2kjMSmOBSXUFwqJ",
     design: [
       "서브컬처 RPG 『붕괴: 스타레일』의 UI 사운드로, 조작 시의 반응감과 피드백 사운드를 구성하고자 했습니다. SF가 섞인 세계관의 분위기를 함께 전달하고자 했습니다.",
@@ -192,7 +192,7 @@ const PORTFOLIO_PROJECTS = [
     title: "캐릭터 트레일러_ 젠레스 존 제로",
     thumbnail: "assets/thumbnails/ZZZ.png",
     year: "2026",
-    categories: ["SUBCULTURE"],
+    categories: ["SUBCULTURE", "TRAILER"],
     video: "https://youtu.be/RnZkYo0acCg?si=YD-oF2gs0ReFsOpL",
     design: [
       "젠레스 존 제로 (ZZZ)의 캐릭터 트레일러 영상입니다. 해당 게임의 특징인 스타일리시한 전투의 타격감, 스킬 사운드를 디자인하고자 하였습니다.",
@@ -206,7 +206,7 @@ const PORTFOLIO_PROJECTS = [
     title: "기획서_더렐릭퍼스트가디언",
     thumbnail: "assets/thumbnails/rl.png",
     year: "2026",
-    categories: ["DESIGN"],
+    categories: ["DOC"],
     document: "https://drive.google.com/file/d/1GMNFJp4ayD5BHxfxrTWRqK-HEE66XUNo/view?usp=sharing",
     design: [
       "더 렐릭 퍼스트 가디언의 관련한 기사를 기반으로 예상을 더해 작성한 기획서입니다.",
