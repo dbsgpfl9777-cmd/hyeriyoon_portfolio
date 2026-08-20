@@ -48,7 +48,7 @@ const PROFILE = {
 // thumbnail: 목록에 보이는 작은 썸네일 이미지 경로. 비워두면 어두운 자리표시자가 나옵니다.
 //   예: thumbnail: "assets/thumbnails/monster-p.jpg"
 const PORTFOLIO_CATEGORIES = [
-  "HORROR", "CASUAL", "RPG", "SUBCULTURE", "IN-GAME", "TRAILER", "UI", "DOC", "UNREAL",
+  "HORROR", "CASUAL", "RPG", "SUBCULTURE", "IN-GAME", "TRAILER", "UI", "DOC", "ENGINE",
 ];
 
 const PORTFOLIO_PROJECTS = [
