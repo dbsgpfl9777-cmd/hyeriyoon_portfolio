@@ -34,9 +34,7 @@ const PROFILE = {
   // 사이드바 외부 링크 — href를 실제 링크로 바꿔주세요
   links: {
     email: "mailto:dbsgpfl9777@gmail.com",
-    youtube: "https://youtube.com/",
-    drive: "https://drive.google.com/",
-    pdf: "#", // PDF 이력서 파일 경로 또는 다운로드 링크
+    pdf: "assets/resume.pdf",
   },
 };
 
