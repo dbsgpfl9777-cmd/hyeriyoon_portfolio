@@ -204,7 +204,7 @@ const PORTFOLIO_PROJECTS = [
   },
     {
     title: "기획서_더렐릭퍼스트가디언",
-    thumbnail: "",
+    thumbnail: "assets/thumbnails/rl.png",
     year: "2026",
     categories: ["DESIGN"],
     document: "https://drive.google.com/file/d/1GMNFJp4ayD5BHxfxrTWRqK-HEE66XUNo/view?usp=sharing",
