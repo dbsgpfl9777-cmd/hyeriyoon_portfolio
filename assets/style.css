@@ -220,7 +220,7 @@ button:focus-visible {
   padding: 70px 34px 0;
 }
 .content-inner {
-  max-width: 1280px;
+  max-width: 1560px;
   margin: 0 auto;
 }
 .content-section {
@@ -255,7 +255,7 @@ button:focus-visible {
   align-items: baseline;
   justify-content: space-between;
   padding-bottom: 16px;
-  border-bottom: 1px solid rgba(0,0,0,.14);
+  border-bottom: 1.5px solid rgba(0,0,0,.22);
 }
 .content-title {
   font: 500 26px/1 Archivo, sans-serif;
@@ -583,6 +583,38 @@ button:focus-visible {
   .col-profile { padding-left: 0; }
   .col-gameplay { padding-right: 0; }
   .detail-video, .detail-navrow { max-width: 100%; }
+}
+
+/* ============ 큰 화면(대형 모니터): 콘텐츠가 화면에 비해 작아 보이지 않도록 확대 ============ */
+@media (min-width: 1600px) {
+  .content-inner { max-width: 1820px; }
+
+  /* About */
+  .about-grid { max-width: 1680px; }
+  .col-profile { padding-right: 48px; }
+  .col-career-skills { padding-left: 48px; padding-right: 48px; }
+  .col-gameplay { padding-left: 48px; }
+  .content-title { font-size: 30px; }
+  .field-label { font-size: 12px; }
+  .field-value { font-size: 18px; }
+  .field-value.muted { font-size: 17px; }
+  .career-row span:first-child, .cert-row span:first-child { font-size: 17px; }
+  .skill-tag { font-size: 14px; padding: 8px 16px; }
+  .gameplay-title { font-size: 15px; }
+  .gameplay-thumb { width: 84px; height: 48px; }
+
+  /* Portfolio */
+  .detail-video, .detail-navrow { max-width: 860px; }
+  .detail-video .video-box { max-height: 484px; }
+  .detail-title { font-size: 26px; }
+  .design-text, .tools-list div { font-size: 14.5px; }
+  .thumb-box { width: 170px; height: 100px; }
+
+  /* Experience */
+  .exp-org { font-size: 18px; }
+  .exp-subtitle { font-size: 12.5px; }
+  .exp-detail-text, .exp-role-list { font-size: 14px; }
+  .exp-thumb { width: 120px; height: 70px; }
 }
 
 /* Scrollbar - quiet */
