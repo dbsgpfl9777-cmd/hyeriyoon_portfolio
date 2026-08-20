@@ -120,3 +120,16 @@ function renderVideoBox(videoUrl, captionText) {
       <div class="video-caption" aria-hidden="true">${captionText || 'VIDEO NOT SET'}</div>
     </div>`;
 }
+
+function renderDocBox(docUrl, title, thumbnail) {
+  return `
+    <a class="video-box doc-box" href="${docUrl}" target="_blank" rel="noreferrer" aria-label="${title} 기획서 문서 열기"${thumbStyle(thumbnail)}>
+      <div class="doc-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M7 3h7l5 5v13H7V3Z"/>
+          <path d="M14 3v5h5"/>
+        </svg>
+      </div>
+      <div class="doc-caption">문서 보기 (Google Drive) →</div>
+    </a>`;
+}
