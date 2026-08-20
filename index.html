@@ -216,8 +216,7 @@
           <div class="detail-year">${p.year}</div>
         </div>
         <div class="detail-video">
-          ${renderVideoBox(p.video, 'VIDEO NOT SET')},
-          ${p.document ? renderDocBox(p.document, p.title) : renderVideoBox(p.video, 'VIDEO NOT SET')}
+          ${renderVideoBox(p.video, 'VIDEO NOT SET')}
         </div>
         <div class="detail-navrow">
           <button id="pf-prev-btn" ${activeIndex === 0 ? 'disabled' : ''} aria-label="이전 프로젝트">← PREV</button>
