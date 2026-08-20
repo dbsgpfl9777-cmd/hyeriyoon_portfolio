@@ -202,6 +202,17 @@ const PORTFOLIO_PROJECTS = [
     ],
     tools: ["Distortion", "Pitch Shift", "DisPerser", "Saturn 2", "Disperse"],
   },
+    {
+    title: "기획서_더렐릭퍼스트가디언",
+    thumbnail: "",
+    year: "2026",
+    categories: ["DESIGN"],
+    document: "https://drive.google.com/file/d/1GMNFJp4ayD5BHxfxrTWRqK-HEE66XUNo/view?usp=sharing",
+    design: [
+      "더 렐릭 퍼스트 가디언의 관련한 기사를 기반으로 예상을 더해 작성한 기획서입니다.",
+    ],
+    tools: [],
+  },
 ];
 
 
