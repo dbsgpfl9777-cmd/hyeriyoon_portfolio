@@ -48,7 +48,7 @@ const PROFILE = {
 // thumbnail: 목록에 보이는 작은 썸네일 이미지 경로. 비워두면 어두운 자리표시자가 나옵니다.
 //   예: thumbnail: "assets/thumbnails/monster-p.jpg"
 const PORTFOLIO_CATEGORIES = [
-  "HORROR", "CASUAL", "RPG", "SUBCULTURE", "DESIGN", "GAME PROJECT",
+  "HORROR", "CASUAL", "RPG", "SUBCULTURE", "IN-GAME", "TRAILER", "UI", "DOC", "UNREAL",
 ];
 
 const PORTFOLIO_PROJECTS = [
@@ -85,7 +85,7 @@ const PORTFOLIO_PROJECTS = [
     title: "애니메이션_러브데스로봇",
     thumbnail: "assets/thumbnails/LDR.png",
     year: "2026",
-    categories: ["HORROR", "SUBCULTURE"],
+    categories: ["HORROR"],
     video: "https://youtu.be/FC1v6R8sYhU?si=xndsgT_ffeYq42hE",
     design: [
       "『러브 데스 로봇 - 집 안에서 생긴 일』의 한 장면으로, 일상적 공간에서 공포와 긴장감을 쌓아가다 마지막 극적인 반전 흐름을 사운드로 설계하는 것을 목표로 했습니다.",
@@ -101,7 +101,7 @@ const PORTFOLIO_PROJECTS = [
     title: "스킬 사운드 디자인",
     thumbnail: "assets/thumbnails/rpg-skill.png",
     year: "2026",
-    categories: ["RPG", "DESIGN"],
+    categories: ["RPG"],
     video: "https://youtu.be/yQEcVEVt8ys?si=--Z6I3IjcsAPw3i8",
     design: [
       "RPG 장르의 스킬 VFX 영상의 사운드를 디자인한 영상입니다. 각 속성의 무게와 질감을 표현하는 것에 중점을 두었습니다.",
@@ -117,7 +117,7 @@ const PORTFOLIO_PROJECTS = [
     title: "언리얼 와이즈 연동 사운드 구현",
     thumbnail: "assets/thumbnails/unreal.png",
     year: "2026",
-    categories: ["GAME PROJECT", "DESIGN"],
+    categories: ["GAME PROJECT"],
     video: "https://youtu.be/qKzIeKxzFpI?si=IFXV4VnRhg-8KMwj",
     design: [
       "언리얼 엔진과 와이즈 연동을 통해 게임 상황에 반응하는 인터랙티브 사운드 시스템 구현을 목표로 했습니다.",
@@ -162,7 +162,7 @@ const PORTFOLIO_PROJECTS = [
     title: "UI_프래그마타",
     thumbnail: "assets/thumbnails/Prag.png",
     year: "2026",
-    categories: ["GAME PROJECT", "DESIGN"],
+    categories: ["RPG"],
     video: "https://youtu.be/Xy7sCgA5JxA?si=9zfcCG4ugeu91KF",
     design: [
       "SF 장르의 특성에 맞춰, 기계적인 움직임을 표현한 UI를 구현하고자 하였습니다. 각 UI의 인터랙션 상태를 즉각 구분하는 사운드를 설계하는 것을 목표로 하였습니다.",
