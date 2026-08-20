@@ -75,9 +75,8 @@
 <script src="assets/common.js"></script>
 <script>
   // ---- Home 데모 릴 영상 ----
-  const DEMO_REEL_URL = ""; // 예: "https://www.youtube.com/watch?v=xxxxxxxxxxx"
   document.getElementById('home-video').innerHTML =
-    renderVideoBox(DEMO_REEL_URL, 'STILL FRAME — 1920×1080');
+    renderVideoBox(PROFILE.demoReel, 'STILL FRAME — 1920×1080');
 
   // ---- 사이드바 ----
   document.getElementById('sidebar-mount').outerHTML = renderSidebar(186);
