@@ -25,9 +25,6 @@ function renderSidebar(widthPx) {
         <a href="${PROFILE.links.youtube}" target="_blank" rel="noreferrer">
           <span class="ic ic-youtube" aria-hidden="true"><span class="tri"></span></span>YouTube
         </a>
-        <a href="${PROFILE.links.drive}" target="_blank" rel="noreferrer">
-          <span class="ic ic-drive" aria-hidden="true"></span>Google Drive
-        </a>
         <a href="${PROFILE.links.pdf}">
           <span class="ic ic-pdf" aria-hidden="true"></span>PDF / Resume
         </a>
