@@ -2,8 +2,6 @@
 // 공용 유틸 함수
 // ============================================================
 
-// 사이드바 HTML을 그려주는 함수. 각 메뉴는 페이지 이동이 아니라 같은 페이지 안에서
-// 해당 섹션으로 스크롤 이동합니다. active 표시는 스크롤 위치에 따라 자동으로 바뀝니다(common.js 하단 참고).
 function renderSidebar(widthPx) {
   return `
     <div class="sidebar" style="width:${widthPx}px">
@@ -32,7 +30,6 @@ function renderSidebar(widthPx) {
     </div>`;
 }
 
-// 스크롤 위치에 따라 사이드바에서 현재 보고 있는 섹션을 강조 표시 (scroll-spy)
 function initScrollSpy() {
   const sections = ['about-section', 'portfolio-section', 'experience-section']
     .map(id => document.getElementById(id))
@@ -52,7 +49,6 @@ function initScrollSpy() {
   };
 
   const observer = new IntersectionObserver((entries) => {
-    // 화면 상단에 가장 가까이 걸쳐있는 섹션을 활성 상태로 표시
     const visible = entries.filter(e => e.isIntersecting);
     if (visible.length === 0) return;
     visible.sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
@@ -63,7 +59,6 @@ function initScrollSpy() {
   sections.forEach(sec => observer.observe(sec));
 }
 
-// 각 섹션이 스크롤로 화면에 들어올 때 안 보이던 상태에서 페이드인되며 나타나는 효과
 function initScrollReveal() {
   const sections = document.querySelectorAll('.content-section');
   if (sections.length === 0) return;
@@ -72,7 +67,7 @@ function initScrollReveal() {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('in-view');
-        observer.unobserve(entry.target); // 한 번 나타난 뒤에는 다시 숨기지 않음
+        observer.unobserve(entry.target);
       }
     });
   }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
@@ -80,8 +75,6 @@ function initScrollReveal() {
   sections.forEach(sec => observer.observe(sec));
 }
 
-// 유튜브/구글드라이브 링크를 <iframe> embed URL로 변환.
-// 인식 못 하는 링크는 null 반환 (자리표시자 유지).
 function toEmbedUrl(url) {
   if (!url) return null;
   url = url.trim();
@@ -90,22 +83,24 @@ function toEmbedUrl(url) {
   let m = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/shorts\/)([\w-]{6,})/);
   if (m) return `https://www.youtube.com/embed/${m[1]}`;
 
-  // Google Drive: /file/d/<id>/...
+  // YouTube 재생목록
+  m = url.match(/youtube\.com\/playlist\?list=([\w-]+)/);
+  if (m) return `https://www.youtube.com/embed/videoseries?list=${m[1]}`;
+
+  // Google Drive
   m = url.match(/drive\.google\.com\/file\/d\/([\w-]+)/);
   if (m) return `https://drive.google.com/file/d/${m[1]}/preview`;
 
-  // 이미 embed 형태인 경우 그대로 사용
   if (url.includes('/embed/') || url.includes('/preview')) return url;
 
   return null;
 }
 
-// 썸네일 이미지가 있으면 그 이미지를 배경으로, 없으면 기존 placeholder 그대로 표시
-// className: "thumb-box" | "exp-thumb" | "gameplay-thumb" 등
 function thumbStyle(imagePath) {
   if (!imagePath) return '';
   return ` style="background-image:url('${imagePath}')"`;
 }
+
 function renderVideoBox(videoUrl, captionText) {
   const embed = toEmbedUrl(videoUrl);
   if (embed) {
